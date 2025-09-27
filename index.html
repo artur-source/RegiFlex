@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegiFlex - Sistema de Gestão para Clínicas de Psicologia</title>
+    <meta name="description" content="RegiFlex é um sistema completo de gestão para clínicas de psicologia, desenvolvido por estudantes de ADS. Interface moderna, segura e intuitiva.">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="assets/regiflex-logo.jpg" alt="RegiFlex Logo" class="logo">
+                    <div class="brand-text">
+                        <h1>RegiFlex</h1>
+                        <p>Seu registro simplificado</p>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active">Início</a>
+                    <a href="#about" class="nav-link">Sobre</a>
+                    <a href="#features" class="nav-link">Funcionalidades</a>
+                    <a href="#tech" class="nav-link">Tecnologias</a>
+                    <a href="#team" class="nav-link">Equipe</a>
+                    <a href="#contact" class="nav-link">Contato</a>
+                </div>
+                <div class="nav-mobile">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-heart-pulse"></i>
+                    Sistema de Gestão para Clínicas de Psicologia
+                </div>
+                <h1 class="hero-title">
+                    Simplifique a gestão da sua clínica com o 
+                    <span class="text-gradient">RegiFlex</span>
+                </h1>
+                <p class="hero-description">
+                    Uma solução completa para registro, acompanhamento e análise de informações de pacientes e sessões. 
+                    Interface moderna, segura e intuitiva desenvolvida por estudantes de Análise e Desenvolvimento de Sistemas.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Começar Agora
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Ver Demonstração
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="card-title">Dashboard RegiFlex</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <span class="stat-number">1,234</span>
+                                    <span class="stat-label">Pacientes Ativos</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <div>
+                                    <span class="stat-number">456</span>
+                                    <span class="stat-label">Sessões Este Mês</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <span class="stat-number">94%</span>
+                                    <span class="stat-label">Taxa de Sucesso</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <span class="stat-number">50min</span>
+                                    <span class="stat-label">Tempo Médio/Sessão</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre o RegiFlex</h2>
+                <p class="section-subtitle">
+                    Transformando a gestão de clínicas de psicologia através da tecnologia e inovação
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        O RegiFlex nasceu de uma visão ambiciosa: simplificar e modernizar a gestão de clínicas de psicologia. 
+                        Desenvolvido por uma equipe dedicada de estudantes de Análise e Desenvolvimento de Sistemas, 
+                        o projeto começou como uma atividade acadêmica proposta pelo professor Thiago, que desafiou nossa turma 
+                        a criar algo que nunca existiu.
+                    </p>
+                    <p>
+                        Desde então, o RegiFlex se tornou o foco de diversos projetos de extensão do nosso grupo. 
+                        Todos trabalharam incansavelmente para fazer essa ideia funcionar e se tornar uma realidade. 
+                        O sistema oferece uma interface moderna, segura e intuitiva, com funcionalidades abrangentes 
+                        para profissionais da área de psicologia.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Segurança de Dados</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Interface Responsiva</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-brain"></i>
+                            <span>IA Integrada</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Relatórios Avançados</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Missão</h3>
+                        <p>Facilitar o trabalho de profissionais da psicologia através de tecnologia moderna e intuitiva.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Visão</h3>
+                        <p>Ser a principal solução de gestão para clínicas de psicologia no Brasil.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Valores</h3>
+                        <p>Inovação, segurança, simplicidade e compromisso com a qualidade do atendimento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Principais Funcionalidades</h2>
+                <p class="section-subtitle">
+                    Descubra como o RegiFlex pode transformar a gestão da sua clínica
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Gestão de Pacientes</h3>
+                    <p>Cadastro completo de informações demográficas, contato e histórico médico com interface intuitiva e segura.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Cadastro Completo</span>
+                        <span class="tag">Histórico Médico</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Agendamento de Sessões</h3>
+                    <p>Sistema completo para agendar, registrar e acompanhar sessões terapêuticas com controle de status e evolução.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Agendamento</span>
+                        <span class="tag">Controle de Status</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <h3>QR Code</h3>
+                    <p>Geração e leitura de QR Codes para acesso rápido a informações de pacientes e otimização do fluxo de atendimento.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Acesso Rápido</span>
+                        <span class="tag">Otimização</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>IA Leve</h3>
+                    <p>Análise inteligente de padrões e geração de alertas para auxiliar na tomada de decisões clínicas.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Análise Inteligente</span>
+                        <span class="tag">Alertas</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Relatórios e Dashboard</h3>
+                    <p>Visão geral detalhada das atividades da clínica com gráficos interativos e indicadores de performance.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Gráficos Interativos</span>
+                        <span class="tag">Indicadores</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Segurança</h3>
+                    <p>Sistema de autenticação robusto com diferentes perfis de usuário, criptografia e logs de auditoria.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Autenticação</span>
+                        <span class="tag">Criptografia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="tech" class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tecnologias Utilizadas</h2>
+                <p class="section-subtitle">
+                    As ferramentas e frameworks que tornam o RegiFlex robusto, moderno e escalável
+                </p>
+            </div>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <div class="category-header">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Vite</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Shadcn/ui</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-icons"></i>
+                            <span>Lucide React</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Recharts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python + Flask</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span>SQLAlchemy</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-key"></i>
+                            <span>JWT + Bcrypt</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-qrcode"></i>
+                            <span>QRCode</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Pandas + Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <div class="category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Infraestrutura</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-cubes"></i>
+                            <span>Docker Compose</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-unicorn"></i>
+                            <span>Gunicorn</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-code"></i>
+                            <span>VSCode</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Quem Somos?</h2>
+                <p class="section-subtitle">
+                    Conheça a equipe de estudantes de ADS que desenvolveu o RegiFlex
+                </p>
+            </div>
+            <div class="team-story">
+                <div class="story-content">
+                    <h3>A História do Projeto</h3>
+                    <p>
+                        O projeto RegiFlex nasceu de uma atividade proposta pelo <strong>professor Thiago</strong>, que desafiou nossa turma a criar algo 
+                        que nunca existiu. Desde então, o RegiFlex se tornou o foco de diversos projetos de extensão do nosso grupo.
+                    </p>
+                    <p>
+                        Somos estudantes de <strong>Análise e Desenvolvimento de Sistemas</strong> e, desde o início, todos trabalharam 
+                        incansavelmente para fazer essa ideia funcionar e se tornar uma realidade.
+                    </p>
+                    <div class="story-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                        Projeto de Extensão Acadêmica
+                    </div>
+                </div>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <span>AF</span>
+                    </div>
+                    <div class="member-info">
+                        <h4>Alexandre Fernandes da Silva</h4>
+                        <p class="member-role">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                        <p class="member-rgm">RGM: 2581191</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <span>AA</span>
+                    </div>
+                    <div class="member-info">
+                        <h4>Artur Alves Santos</h4>
+                        <p class="member-role">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                        <p class="member-rgm">RGM: 2417606</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <span>CE</span>
+                    </div>
+                    <div class="member-info">
+                        <h4>Carlos Eduardo Fernandes de Freitas</h4>
+                        <p class="member-role">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                        <p class="member-rgm">RGM: 2417694</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <span>GA</span>
+                    </div>
+                    <div class="member-info">
+                        <h4>Guilherme Almeida Rocha</h4>
+                        <p class="member-role">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                        <p class="member-rgm">RGM: 2417704</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <span>JH</span>
+                    </div>
+                    <div class="member-info">
+                        <h4>Julio Henrique Lins da Silva</h4>
+                        <p class="member-role">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                        <p class="member-rgm">RGM: 2417382</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <span>NA</span>
+                    </div>
+                    <div class="member-info">
+                        <h4>Nicollas Andrey</h4>
+                        <p class="member-role">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                        <p class="member-rgm">RGM: 2417423</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Interessado no Projeto?</h2>
+                    <p>Entre em contato conosco para saber mais sobre o RegiFlex ou para colaborar com o desenvolvimento.</p>
+                    <div class="contact-actions">
+                        <a href="mailto:contato@regiflex.com" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Entrar em Contato
+                        </a>
+                        <a href="https://github.com/artur-source/RegiFlex" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i>
+                            Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-visual">
+                    <div class="contact-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Open Source</h3>
+                        <p>Projeto disponível no GitHub para contribuições da comunidade</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-info">
+                        <img src="assets/regiflex-logo.jpg" alt="RegiFlex Logo" class="footer-logo">
+                        <div>
+                            <h3>RegiFlex</h3>
+                            <p>Seu registro simplificado</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Sistema completo de gestão para clínicas de psicologia, desenvolvido por estudantes de ADS 
+                        com foco na inovação e qualidade.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Funcionalidades</h4>
+                        <ul>
+                            <li><a href="#features">Gestão de Pacientes</a></li>
+                            <li><a href="#features">Agendamento</a></li>
+                            <li><a href="#features">QR Code</a></li>
+                            <li><a href="#features">Relatórios</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="https://github.com/artur-source/RegiFlex/wiki">Documentação</a></li>
+                            <li><a href="https://github.com/artur-source/RegiFlex/issues">FAQ</a></li>
+                            <li><a href="mailto:contato@regiflex.com">Contato</a></li>
+                            <li><a href="https://github.com/artur-source/RegiFlex">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RegiFlex. Desenvolvido por estudantes de ADS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
