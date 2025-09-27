@@ -1,0 +1,149 @@
+/* Estilos personalizados para o RegiFlex */
+
+/* Logo personalizado */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+/* Melhorias de responsividade */
+@media (max-width: 768px) {
+    /* Container principal */
+    .container, .max-w-7xl, .max-w-3xl {
+        padding: 0 1rem !important;
+        margin: 0 auto !important;
+    }
+    
+    /* Grid de 3 colunas vira 1 coluna */
+    .grid-cols-3 {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    /* Flex row vira column */
+    .flex-row {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+    }
+    
+    /* Ajustes de texto */
+    .text-4xl {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    .text-3xl {
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+    }
+    
+    .text-2xl {
+        font-size: 1.25rem !important;
+    }
+    
+    /* Ajustes de padding */
+    .px-8 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    .py-4 {
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+    
+    .p-6 {
+        padding: 1rem !important;
+    }
+    
+    /* Botões responsivos */
+    .gap-4 {
+        gap: 0.5rem !important;
+        flex-direction: column !important;
+    }
+    
+    /* Navegação responsiva */
+    .flex.gap-1 {
+        flex-wrap: wrap !important;
+        gap: 0.25rem !important;
+    }
+    
+    /* Cartões de funcionalidades */
+    .grid > div {
+        margin-bottom: 1rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-image {
+        width: 32px;
+        height: 32px;
+    }
+    
+    /* Texto ainda menor em telas muito pequenas */
+    .text-4xl {
+        font-size: 1.75rem !important;
+    }
+    
+    .text-3xl {
+        font-size: 1.25rem !important;
+    }
+    
+    .text-xl {
+        font-size: 1.1rem !important;
+    }
+    
+    /* Padding ainda menor */
+    .container, .max-w-7xl, .max-w-3xl {
+        padding: 0 0.5rem !important;
+    }
+    
+    .p-6 {
+        padding: 0.75rem !important;
+    }
+    
+    /* Botões menores */
+    button {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Forçar layout responsivo para elementos específicos */
+@media (max-width: 768px) {
+    /* Forçar grid de funcionalidades a ser vertical */
+    [class*="grid-cols-3"] {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+    
+    /* Ajustar largura dos cartões */
+    [class*="grid-cols-3"] > div {
+        width: 100% !important;
+        max-width: none !important;
+    }
+    
+    /* Centralizar conteúdo */
+    .text-center {
+        text-align: center !important;
+    }
+    
+    /* Melhorar espaçamento vertical */
+    .mb-8, .mb-12 {
+        margin-bottom: 2rem !important;
+    }
+    
+    .mt-8, .mt-12 {
+        margin-top: 2rem !important;
+    }
+}
+
