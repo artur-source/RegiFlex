@@ -1523,3 +1523,30 @@ html {
         margin-top: var(--spacing-2);
     }
 }
+
+
+/* QR Code Styles */
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--spacing-6);
+    padding: var(--spacing-4);
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+}
+
+.qr-code-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: var(--spacing-3);
+    border-radius: var(--radius-sm);
+}
+
+.qr-code-text {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
