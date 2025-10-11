@@ -1550,3 +1550,29 @@ html {
     font-weight: 500;
 }
 
+
+
+/* QR Code Styles */
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--spacing-4);
+    padding: var(--spacing-4);
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.qr-code-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: var(--spacing-2);
+}
+
+.qr-code-text {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    text-align: center;
+}
+

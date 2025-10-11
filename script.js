@@ -130,7 +130,7 @@ function initScrollAnimations() {
 
 // Counter animations for statistics
 function initCounterAnimations() {
-    const counters = document.querySelectorAll('.stat-number');
+    const counters = document.querySelectorAll(".stat-price");
     const counterObserver = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -159,6 +159,9 @@ function animateCounter(element) {
     } else if (isTime) {
         endValue = parseInt(target);
         suffix = 'min';
+    } else if (target.includes('R$')) {
+        endValue = parseFloat(target.replace('R$', '').replace(',', '.').trim());
+        suffix = ''; // Sem sufixo para valores monetários
     } else {
         endValue = parseInt(target.replace(/,/g, ''));
     }
@@ -181,7 +184,11 @@ function animateCounter(element) {
             displayValue = displayValue.toLocaleString();
         }
         
-        element.textContent = displayValue + suffix;
+        if (target.includes('R$')) {
+            element.textContent = 'R$ ' + startValue.toFixed(2).replace('.', ',');
+        } else {
+            element.textContent = displayValue + suffix;
+        }
     }, 16);
 }
 
