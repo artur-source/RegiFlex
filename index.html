@@ -26,6 +26,7 @@
                     <a href="#home" class="nav-link active">Início</a>
                     <a href="#about" class="nav-link">Sobre</a>
                     <a href="#features" class="nav-link">Funcionalidades</a>
+                    <a href="#pricing" class="nav-link">Preços</a>
                     <a href="#tech" class="nav-link">Tecnologias</a>
                     <a href="#team" class="nav-link">Equipe</a>
                     <a href="#contact" class="nav-link">Contato</a>
@@ -38,6 +39,19 @@
             </div>
         </nav>
     </header>
+
+    <!-- Development Notice Banner -->
+    <div class="dev-notice">
+        <div class="container">
+            <div class="notice-content">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span><strong>Atenção:</strong> Sistema em desenvolvimento. Os links de pagamento são apenas para demonstração e não processam cobranças reais.</span>
+                <button class="notice-close" onclick="this.parentElement.parentElement.style.display='none'">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -53,9 +67,32 @@
                 </h1>
                 <p class="hero-description">
                     Uma solução completa para registro, acompanhamento e análise de informações de pacientes e sessões. 
-                    Interface moderna, segura e intuitiva desenvolvida por estudantes de Análise e Desenvolvimento de Sistemas.
+                    Sistema SaaS moderno, seguro e escalável para clínicas de psicologia.
                 </p>
-
+                <div class="hero-actions">
+                    <a href="#pricing" class="btn btn-primary btn-large">
+                        <i class="fas fa-rocket"></i>
+                        Ver Planos e Preços
+                    </a>
+                    <a href="mailto:regiflex.contato@gmail.com" class="btn btn-secondary btn-large">
+                        <i class="fas fa-envelope"></i>
+                        Falar com Vendas
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">R$ 34,90</div>
+                        <div class="stat-label">A partir de</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">7 dias</div>
+                        <div class="stat-label">Teste grátis</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Na nuvem</div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -319,6 +356,125 @@
                             <i class="fas fa-cloud"></i>
                             <span>Supabase Cloud</span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Planos e Preços</h2>
+                <p class="section-subtitle">
+                    Escolha o plano ideal para sua clínica e comece a transformar sua gestão hoje mesmo
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="plan-name">Individual</h3>
+                        <p class="plan-description">Perfeito para psicólogos autônomos</p>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">34</span>
+                            <span class="cents">,90</span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Até 100 pacientes</li>
+                            <li><i class="fas fa-check"></i> Agendamento ilimitado</li>
+                            <li><i class="fas fa-check"></i> Relatórios básicos</li>
+                            <li><i class="fas fa-check"></i> QR Code para check-in</li>
+                            <li><i class="fas fa-check"></i> Backup automático</li>
+                            <li><i class="fas fa-check"></i> Suporte por email</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="https://buy.stripe.com/test_00weVc6jB0tNd9DcmV6Na00" class="btn btn-primary" target="_blank" onclick="alert('⚠️ DEMONSTRAÇÃO: Este é um link de teste do Stripe. Nenhuma cobrança real será processada.')">
+                            <i class="fas fa-credit-card"></i>
+                            Assinar Agora (DEMO)
+                        </a>
+                        <p class="trial-info">7 dias grátis • Cancele quando quiser</p>
+                    </div>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i>
+                        Mais Popular
+                    </div>
+                    <div class="pricing-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="plan-name">Clínica</h3>
+                        <p class="plan-description">Ideal para clínicas com múltiplos profissionais</p>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">99</span>
+                            <span class="cents">,90</span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Pacientes ilimitados</li>
+                            <li><i class="fas fa-check"></i> Múltiplos profissionais</li>
+                            <li><i class="fas fa-check"></i> Relatórios avançados</li>
+                            <li><i class="fas fa-check"></i> Dashboard completo</li>
+                            <li><i class="fas fa-check"></i> Gestão de usuários</li>
+                            <li><i class="fas fa-check"></i> Suporte prioritário</li>
+                            <li><i class="fas fa-check"></i> Integração com IA</li>
+                            <li><i class="fas fa-check"></i> API personalizada</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="https://buy.stripe.com/test_4gM14m9vNa4nd9Dfz76Na01" class="btn btn-primary" target="_blank" onclick="alert('⚠️ DEMONSTRAÇÃO: Este é um link de teste do Stripe. Nenhuma cobrança real será processada.')">
+                            <i class="fas fa-credit-card"></i>
+                            Assinar Agora (DEMO)
+                        </a>
+                        <p class="trial-info">14 dias grátis • Cancele quando quiser</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-guarantee">
+                <div class="guarantee-content">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="guarantee-text">
+                        <h4>Garantia de 30 dias</h4>
+                        <p>Se não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem perguntas, sem complicações.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-faq">
+                <h3>Perguntas Frequentes</h3>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>Posso cancelar a qualquer momento?</h4>
+                        <p>Sim! Você pode cancelar sua assinatura a qualquer momento sem taxas ou multas.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Os dados ficam seguros?</h4>
+                        <p>Absolutamente! Utilizamos criptografia de nível bancário e backup automático diário.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Preciso instalar algum software?</h4>
+                        <p>Não! O RegiFlex funciona 100% na nuvem. Acesse de qualquer lugar com internet.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Tem suporte técnico?</h4>
+                        <p>Sim! Oferecemos suporte por email para todos os planos e suporte prioritário para clínicas.</p>
                     </div>
                 </div>
             </div>
