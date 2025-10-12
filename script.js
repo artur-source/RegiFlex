@@ -185,7 +185,7 @@ function animateCounter(element) {
         }
         
         if (target.includes('R$')) {
-            element.textContent = 'R$ ' + startValue.toFixed(2).replace('.', ',');
+            element.textContent = 'R$ ' + startValue.toFixed(2).replace('.', ',') + suffix;
         } else {
             element.textContent = displayValue + suffix;
         }
