@@ -8,8 +8,7 @@
 :root {
     /* Colors based on RegiFlex branding */
     --primary-color: #2563eb;
-    --secondary-color: #60a5fa; /* Um azul mais suave */;
-    */; anteriormente #10b981 (verde) */
+    --secondary-color: #10b981;
     --accent-color: #f59e0b;
     --text-primary: #1f2937;
     --text-secondary: #6b7280;
