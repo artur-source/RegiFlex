@@ -130,15 +130,19 @@ Todos trabalharam incansavelmente para fazer essa ideia funcionar e se tornar um
 ## 📊 Status do Projeto
 
 - ✅ **Gestão de Pacientes** - Completo
+- ✅ **Segurança** - Melhorias implementadas (remoção de senha hardcoded)
 - ✅ **Gestão de Sessões** - Completo  
 - ✅ **Autenticação** - Completo
 - ✅ **QR Code** - Completo
 - ✅ **Dashboard** - Completo
-- 🚧 **Relatórios Avançados** - Em desenvolvimento
-- 🚧 **IA Integrada** - Em desenvolvimento
+- ✅ **Relatórios Avançados** - Em desenvolvimento (com melhorias de segurança)
+- ✅ **IA Integrada** - Em desenvolvimento (com melhorias de segurança)
 - 📋 **Mobile App** - Planejado
 
 ## 📖 Documentação
+
+- **[Wiki do Projeto](WIKI.md)** - Documentação detalhada, tutoriais e FAQs
+
 
 - **[Página de Apresentação](https://artur-source.github.io/RegiFlex/)** - Site oficial do projeto
 - **[Repositório de Desenvolvimento](https://github.com/artur-source/RegiFlex-teste)** - Código fonte e documentação técnica
