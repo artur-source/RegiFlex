@@ -66,7 +66,7 @@ Sistema de autenticação robusto com diferentes perfis de usuário (Admin, Psic
 - **QRCode** - Geração e processamento de códigos QR
 
 ### Infraestrutura e Deploy
-- **Vercel / Netlify** - Plataformas de deploy otimizadas para React
+- **Netlify** - Plataforma de deploy otimizada para React
 - **GitHub Pages** - Hospedagem para página de marketing
 - **Git** - Controle de versão distribuído
 - **GitHub** - Plataforma de desenvolvimento colaborativo
@@ -131,6 +131,7 @@ Todos trabalharam incansavelmente para fazer essa ideia funcionar e se tornar um
 
 - ✅ **Gestão de Pacientes** - Completo
 - ✅ **Segurança** - Melhorias implementadas (remoção de senha hardcoded)
+- ✅ **Integração com n8n e Stripe** - Removida a menção a n8n
 - ✅ **Gestão de Sessões** - Completo  
 - ✅ **Autenticação** - Completo
 - ✅ **QR Code** - Completo
