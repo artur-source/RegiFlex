@@ -147,24 +147,14 @@ Todos trabalharam incansavelmente para fazer essa ideia funcionar e se tornar um
 
 - **[Página de Apresentação](https://artur-source.github.io/RegiFlex/)** - Site oficial do projeto
 - **[Repositório de Desenvolvimento](https://github.com/artur-source/RegiFlex-teste)** - Código fonte e documentação técnica
-- **[Tutorial de Instalação](Tutorial-de-Instalacao.md)** - Guia passo a passo
+- **[Tutorial de Instalação](https://github.com/artur-source/RegiFlex-teste/blob/main/docs/Guia_Instalacao_Producao.md)** - Guia passo a passo (No Repositório de Desenvolvimento)
 - **[FAQ](FAQ.md)** - Perguntas frequentes
-
-## 🤝 Como Contribuir
-
-O RegiFlex é um projeto open source e encorajamos contribuições da comunidade! Para contribuir com o desenvolvimento, acesse o [repositório principal](https://github.com/artur-source/RegiFlex-teste) onde está o código fonte atualizado.
-
-### Diretrizes de Contribuição
-- Siga os padrões de código existentes
-- Adicione testes para novas funcionalidades
-- Atualize a documentação quando necessário
-- Seja respeitoso e construtivo nos comentários
 
 ## 📞 Contato
 
 Para dúvidas, sugestões ou colaborações, entre em contato conosco:
 
-- **Email:** projetoux2024@gmail.com
+- **Email:** regiflex.contato@gmail.com
 - **GitHub:** [artur-source/RegiFlex](https://github.com/artur-source/RegiFlex)
 - **Desenvolvimento:** [artur-source/RegiFlex-teste](https://github.com/artur-source/RegiFlex-teste)
 - **Site:** [https://artur-source.github.io/RegiFlex/](https://artur-source.github.io/RegiFlex/)
