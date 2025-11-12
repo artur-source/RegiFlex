@@ -39,7 +39,7 @@ Sistema completo para agendar, registrar e acompanhar sessões terapêuticas com
 Geração e leitura de QR Codes para acesso rápido a informações de pacientes e otimização do fluxo de atendimento. Esta funcionalidade permite acesso instantâneo aos dados dos pacientes através de dispositivos móveis, agilizando o processo de atendimento.
 
 ### 🤖 IA Integrada
-Análise básica de padrões e geração de alertas simples para auxiliar na tomada de decisões clínicas. **Status:** Em desenvolvimento - funcionalidades de análise inteligente e alertas personalizados estão sendo implementadas gradualmente.
+Análise preditiva de padrões (ex: risco de no-show) e geração de alertas inteligentes para auxiliar na tomada de decisões clínicas e administrativas. **Status:** Versão 1.0 - Em Validação Comercial.
 
 ### 📊 Relatórios e Dashboard
 Visão geral das atividades da clínica com gráficos básicos e indicadores essenciais de performance. O dashboard oferece uma visão consolidada das métricas importantes e permite a geração de relatórios personalizados.
@@ -136,8 +136,8 @@ Todos trabalharam incansavelmente para fazer essa ideia funcionar e se tornar um
 - ✅ **Autenticação** - Completo
 - ✅ **QR Code** - Completo
 - ✅ **Dashboard** - Completo
-- ✅ **Relatórios Avançados** - Em desenvolvimento (com melhorias de segurança)
-- ✅ **IA Integrada** - Em desenvolvimento (com melhorias de segurança)
+- ✅ **Relatórios Avançados** - Completo (com exportação CSV/PDF)
+- ✅ **IA Integrada** - Completo (Versão 1.0 - Em Validação Comercial)
 - 📋 **Mobile App** - Planejado
 
 ## 📖 Documentação
