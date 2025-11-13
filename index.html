@@ -26,6 +26,7 @@
                     <a href="#home" class="nav-link active">Início</a>
                     <a href="#about" class="nav-link">Sobre</a>
                     <a href="#features" class="nav-link">Funcionalidades</a>
+                    <a href="#how-it-works" class="nav-link">Como Funciona</a>
                     <a href="#pricing" class="nav-link">Preços</a>
                     <a href="#tech" class="nav-link">Tecnologias</a>
                     <a href="#team" class="nav-link">Equipe</a>
@@ -245,6 +246,153 @@
                         <span class="tag">Autenticação</span>
                         <span class="tag">Criptografia</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como Irá Funcionar?</h2>
+                <p class="section-subtitle">
+                    Entenda a arquitetura modular e escalável do RegiFlex
+                </p>
+            </div>
+
+            <!-- Structure Section -->
+            <div class="how-it-works-content">
+                <div class="how-section">
+                    <div class="section-number">1</div>
+                    <h3>Estrutura e Funcionamento</h3>
+                    <p>O RegiFlex é um sistema modular e inteligente baseado no modelo <strong>"Core + Módulos de Extensão"</strong>, criado para atender clínicas e profissionais de saúde de forma escalável.</p>
+                    <div class="core-features">
+                        <div class="core-feature">
+                            <i class="fas fa-lock-open"></i>
+                            <div>
+                                <h4>Login e Autenticação Segura</h4>
+                                <p>Via Supabase com criptografia de nível bancário</p>
+                            </div>
+                        </div>
+                        <div class="core-feature">
+                            <i class="fas fa-database"></i>
+                            <div>
+                                <h4>Armazenamento de Dados</h4>
+                                <p>Isolamento por cliente com multi-tenancy</p>
+                            </div>
+                        </div>
+                        <div class="core-feature">
+                            <i class="fas fa-credit-card"></i>
+                            <div>
+                                <h4>Processamento de Pagamentos</h4>
+                                <p>Integração com Stripe Checkout</p>
+                            </div>
+                        </div>
+                        <div class="core-feature">
+                            <i class="fas fa-cogs"></i>
+                            <div>
+                                <h4>Provisionamento Automatizado</h4>
+                                <p>Criação automática do ambiente após assinatura</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="highlight-text"><strong>100% Web:</strong> Sem necessidade de aplicativo. Toda a infraestrutura é hospedada em ambiente serverless (Supabase + Vercel), garantindo velocidade, segurança e baixo custo.</p>
+                </div>
+
+                <div class="how-section">
+                    <div class="section-number">2</div>
+                    <h3>Módulos Atuais</h3>
+                    <p>O RegiFlex opera com módulos especializados por área, todos conectados ao mesmo Core:</p>
+                    <div class="modules-grid">
+                        <div class="module-card active">
+                            <div class="module-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Psicologia</h4>
+                            <p class="module-status">Em fase de testes avançados</p>
+                            <span class="status-badge">Pronto para Lançamento</span>
+                        </div>
+                        <div class="module-card">
+                            <div class="module-icon">
+                                <i class="fas fa-tooth"></i>
+                            </div>
+                            <h4>Odontologia</h4>
+                            <p class="module-status">Em desenvolvimento</p>
+                            <span class="status-badge">Em Breve</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="how-section">
+                    <div class="section-number">3</div>
+                    <h3>Próximos Módulos em Desenvolvimento</h3>
+                    <p>Novos módulos serão lançados gradualmente, aproveitando o mesmo núcleo tecnológico e reduzindo o custo de operação:</p>
+                    <div class="upcoming-modules">
+                        <div class="upcoming-module">
+                            <div class="module-number">1</div>
+                            <h4>Fisioterapia</h4>
+                            <p>Agendamentos, prontuário e relatórios clínicos</p>
+                        </div>
+                        <div class="upcoming-module">
+                            <div class="module-number">2</div>
+                            <h4>Nutrição</h4>
+                            <p>Acompanhamento alimentar e evolução de pacientes</p>
+                        </div>
+                        <div class="upcoming-module">
+                            <div class="module-number">3</div>
+                            <h4>Estética e Dermatofuncional</h4>
+                            <p>Registro fotográfico, pacotes e fidelização</p>
+                        </div>
+                        <div class="upcoming-module">
+                            <div class="module-number">4</div>
+                            <h4>Clínicas Multidisciplinares</h4>
+                            <p>Integração de várias áreas num só sistema</p>
+                        </div>
+                        <div class="upcoming-module">
+                            <div class="module-number">5</div>
+                            <h4>Fonoaudiologia</h4>
+                            <p>Prontuário e agenda especializada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="how-section">
+                    <div class="section-number">4</div>
+                    <h3>Fluxo Operacional do Usuário</h3>
+                    <p>Processo simples e seguro para começar a usar o RegiFlex:</p>
+                    <div class="flow-steps">
+                        <div class="flow-step">
+                            <div class="step-circle">1</div>
+                            <h4>Assinatura</h4>
+                            <p>O profissional realiza a assinatura no site via Stripe</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-circle">2</div>
+                            <h4>Provisionamento</h4>
+                            <p>Sistema cria automaticamente o ambiente exclusivo da clínica</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-circle">3</div>
+                            <h4>Acesso</h4>
+                            <p>Login liberado imediatamente com segurança RLS</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-circle">4</div>
+                            <h4>Operação</h4>
+                            <p>Acesso a todas as funções do módulo contratado</p>
+                        </div>
+                    </div>
+                    <p class="highlight-text"><strong>Check-in de Pacientes:</strong> Feito via QR Code Web, sem precisar baixar app!</p>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-# RegiFlex - Sistema de Gestão para Clínicas de Psicologia
+# RegiFlex - Sistema de Gestão Modular para Profissionais de Saúde
 
 <div align="center">
   <img src="assets/regiflex-logo.jpg" alt="RegiFlex Logo" width="200"/>
@@ -12,20 +12,53 @@
 
 ## 📋 Sobre o Projeto
 
-O **RegiFlex** é um sistema de gestão completo desenvolvido especificamente para clínicas de psicologia. Nascido de uma visão ambiciosa de simplificar e modernizar a gestão clínica, o projeto foi criado por uma equipe dedicada de estudantes de **Análise e Desenvolvimento de Sistemas** como parte de um projeto acadêmico e de extensão.
+O **RegiFlex** é um sistema de gestão modular e escalável desenvolvido para profissionais e clínicas de saúde. Nascido de uma visão ambiciosa de simplificar e modernizar a gestão clínica, o projeto foi criado por uma equipe dedicada de estudantes de **Análise e Desenvolvimento de Sistemas** como parte de um projeto acadêmico e de extensão.
 
-O sistema oferece uma interface moderna, segura e intuitiva, com funcionalidades abrangentes que atendem às necessidades específicas de profissionais da área de psicologia, desde o cadastro de pacientes até a geração de relatórios detalhados.
+O RegiFlex utiliza uma arquitetura inovadora baseada no modelo **"Core + Módulos de Extensão"**, permitindo que profissionais de diferentes áreas da saúde utilizem a mesma plataforma com funcionalidades especializadas. O sistema oferece uma interface moderna, segura e intuitiva, com funcionalidades abrangentes que atendem às necessidades específicas de cada especialidade.
 
-**Arquitetura Moderna:** Totalmente baseada em **Supabase** como Backend-as-a-Service, eliminando a complexidade de gerenciar servidores próprios e oferecendo escalabilidade automática, segurança robusta e banco de dados real-time.
+**Arquitetura Moderna:** Totalmente baseada em **Supabase** como Backend-as-a-Service, com isolamento de dados por cliente (multi-tenancy), eliminando a complexidade de gerenciar servidores próprios e oferecendo escalabilidade automática, segurança robusta e banco de dados real-time. A infraestrutura é 100% serverless (Supabase + Vercel), garantindo velocidade, segurança e baixo custo operacional.
 
 ### 🎯 Missão
-Facilitar o trabalho de profissionais da psicologia através de tecnologia moderna e intuitiva.
+Facilitar o trabalho de profissionais da saúde através de tecnologia moderna, intuitiva e escalável.
 
 ### 🔭 Visão
-Ser a principal solução de gestão para clínicas de psicologia no Brasil.
+Ser a principal solução de gestão modular para profissionais e clínicas de saúde no Brasil.
 
 ### 💎 Valores
-Inovação, segurança, simplicidade e compromisso com a qualidade do atendimento.
+Inovação, segurança, simplicidade, escalabilidade e compromisso com a qualidade do atendimento.
+
+## 🏗️ Arquitetura Modular
+
+O RegiFlex é construído sobre um **Core centralizado** que gerencia autenticação, pagamentos, provisionamento de ambientes e armazenamento de dados com isolamento por cliente. Cada especialidade possui seu próprio **módulo de extensão** conectado ao Core, permitindo crescimento sem duplicação de código.
+
+### Core - Funcionalidades Centrais
+- **Autenticação Segura** - Login via Supabase com criptografia de nível bancário
+- **Multi-tenancy** - Isolamento completo de dados por cliente
+- **Processamento de Pagamentos** - Integração com Stripe Checkout
+- **Provisionamento Automatizado** - Criação automática de ambientes após assinatura
+- **100% Web** - Sem necessidade de aplicativo, totalmente serverless
+
+### 📦 Módulos Disponíveis
+
+#### ✅ Psicologia (Ativo)
+Módulo em fase de testes avançados, pronto para lançamento comercial. Inclui:
+- Gestão completa de pacientes
+- Agendamento de sessões terapêuticas
+- Prontuário eletrônico
+- Relatórios e dashboard
+- QR Code para check-in
+
+#### 🔄 Odontologia (Em Desenvolvimento)
+Módulo em desenvolvimento, entrando em fase de testes em breve.
+
+### 🚀 Próximos Módulos Planejados
+1. **Fisioterapia** - Agendamentos, prontuário e relatórios clínicos
+2. **Nutrição** - Acompanhamento alimentar e evolução de pacientes
+3. **Estética e Dermatofuncional** - Registro fotográfico, pacotes e fidelização
+4. **Clínicas Multidisciplinares** - Integração de várias áreas num só sistema
+5. **Fonoaudiologia** - Prontuário e agenda especializada para atendimento individual e infantil
+
+Novos módulos serão lançados gradualmente, aproveitando o mesmo núcleo tecnológico e reduzindo o custo de operação.
 
 ## ✨ Principais Funcionalidades
 
@@ -66,7 +99,7 @@ Sistema de autenticação robusto com diferentes perfis de usuário (Admin, Psic
 - **QRCode** - Geração e processamento de códigos QR
 
 ### Infraestrutura e Deploy
-- **Netlify** - Plataforma de deploy otimizada para React
+- **Vercel** - Plataforma de deploy otimizada para React
 - **GitHub Pages** - Hospedagem para página de marketing
 - **Git** - Controle de versão distribuído
 - **GitHub** - Plataforma de desenvolvimento colaborativo
@@ -131,21 +164,21 @@ Todos trabalharam incansavelmente para fazer essa ideia funcionar e se tornar um
 
 - ✅ **Gestão de Pacientes** - Completo
 - ✅ **Segurança** - Melhorias implementadas (remoção de senha hardcoded)
-- ✅ **Integração com n8n e Stripe** - Removida a menção a n8n
 - ✅ **Gestão de Sessões** - Completo  
 - ✅ **Autenticação** - Completo
 - ✅ **QR Code** - Completo
 - ✅ **Dashboard** - Completo
 - ✅ **Relatórios Avançados** - Completo (com exportação CSV/PDF)
 - ✅ **IA Integrada** - Completo (Versão 1.0 - Em Validação Comercial)
+- ✅ **Arquitetura Modular** - Completo (Core + Módulos de Extensão)
+- 🔄 **Módulo Odontologia** - Em Desenvolvimento
+- 📋 **Módulos Adicionais** - Planejados (Fisioterapia, Nutrição, Estética, Fonoaudiologia)
 - 📋 **Mobile App** - Planejado
 
 ## 📖 Documentação
 
 - **[Wiki do Projeto](WIKI.md)** - Documentação detalhada, tutoriais e FAQs
-
-
-- **[Página de Apresentação](https://artur-source.github.io/RegiFlex/)** - Site oficial do projeto
+- **[Página de Apresentação](https://artur-source.github.io/RegiFlex/)** - Site oficial do projeto com seção "Como Irá Funcionar?"
 - **[Repositório de Desenvolvimento](https://github.com/artur-source/RegiFlex-teste)** - Código fonte e documentação técnica
 - **[Tutorial de Instalação](https://github.com/artur-source/RegiFlex-teste/blob/main/docs/Guia_Instalacao_Producao.md)** - Guia passo a passo (No Repositório de Desenvolvimento)
 - **[FAQ](FAQ.md)** - Perguntas frequentes
