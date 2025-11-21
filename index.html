@@ -504,123 +504,72 @@
             <div class="section-header">
                 <h2 class="section-title">Planos e Preços</h2>
                 <p class="section-subtitle">
-                    Escolha o plano ideal para sua clínica e comece a transformar sua gestão hoje mesmo
+                    Entenda a lógica de precificação modular do RegiFlex
                 </p>
             </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <div class="plan-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <h3 class="plan-name">Individual</h3>
-                        <p class="plan-description">Perfeito para psicólogos autônomos</p>
-                        <div class="plan-price">
-                            <span class="currency">R$</span>
-                            <span class="amount">34</span>
-                            <span class="cents">,90</span>
-                            <span class="period">/mês</span>
-                        </div>
-                    </div>
-                    <div class="pricing-features">
-                        <ul class="features-list">
-                            <li><i class="fas fa-check"></i> Até 100 pacientes</li>
-                            <li><i class="fas fa-check"></i> Agendamento ilimitado</li>
-                            <li><i class="fas fa-check"></i> Relatórios básicos</li>
-                            <li><i class="fas fa-check"></i> QR Code para check-in</li>
-                            <li><i class="fas fa-check"></i> Backup automático</li>
-                            <li><i class="fas fa-check"></i> Suporte por email</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-footer">
-                       <a href="#contact" class="btn btn-primary">
-                            <i class="fas fa-credit-card"></i>
-                            Assinar Agora (DEMO)
-                        </a>
-                        <p class="trial-info">Cancele quando quiser</p>
-                        <div class="qr-code-container">
-                            <img src="assets/qrcode_individual.png" alt="QR Code Plano Individual" class="qr-code-img">
-                            <p class="qr-code-text">Escaneie para assinar</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="pricing-card featured">
-                    <div class="featured-badge">
-                        <i class="fas fa-star"></i>
-                        Mais Popular
-                    </div>
-                    <div class="pricing-header">
-                        <div class="plan-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <h3 class="plan-name">Clínica</h3>
-                        <p class="plan-description">Ideal para clínicas com múltiplos profissionais</p>
-                        <div class="plan-price">
-                            <span class="currency">R$</span>
-                            <span class="amount">99</span>
-                            <span class="cents">,90</span>
-                            <span class="period">/mês</span>
-                        </div>
-                    </div>
-                    <div class="pricing-features">
-                        <ul class="features-list">
-                            <li><i class="fas fa-check"></i> Pacientes ilimitados</li>
-                            <li><i class="fas fa-check"></i> Múltiplos profissionais</li>
-                            <li><i class="fas fa-check"></i> Relatórios avançados</li>
-                            <li><i class="fas fa-check"></i> Dashboard completo</li>
-                            <li><i class="fas fa-check"></i> Gestão de usuários</li>
-                            <li><i class="fas fa-check"></i> Suporte prioritário</li>
-                            <li><i class="fas fa-check"></i> Integração com IA</li>
-                            <li><i class="fas fa-check"></i> API personalizada</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-footer">
-                      <a href="#contact" class="btn btn-primary">
-                            <i class="fas fa-credit-card"></i>
-                            Assinar Agora (DEMO)
-                        </a>
-                        <p class="trial-info">Cancele quando quiser</p>
-                        <div class="qr-code-container">
-                            <img src="assets/qrcode_clinica.png" alt="QR Code Plano Clínica" class="qr-code-img">
-    
-                        </div>
-                    </div>
-                </div>
+            
+            <div class="pricing-model-explanation">
+                <p>
+                    O **Modelo de precificação** deriva do núcleo: dois tiers base, **Individual** e **Clínica**, escalonados por custo operacional esperado, complexidade do prontuário, necessidade de múltiplos usuários e integração com faturamento.
+                </p>
+                <p>
+                    **Faixas de referência usadas anteriormente:**
+                    <ul>
+                        <li>Psicologia ≈ R$ 34,90 (Individual) / R$ 99,90 (Clínica)</li>
+                        <li>Odontologia ≈ R$ 49,90 (Individual) / R$ 149,90 (Clínica)</li>
+                    </ul>
+                </p>
+                <p>
+                    **Escalonamento para futuros módulos** exige coerência com três variáveis estruturais: necessidade de mídia (ex: fotos estéticas), complexidade clínica (odontograma é maior que psicologia), demanda multiárea (multidisciplinar agrega camadas). Preços seguem a lógica.
+                </p>
+            </div>
+
+            <div class="pricing-results">
+                <h3>Resultados de Precificação por Módulo</h3>
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Módulo</th>
+                            <th>Plano Individual (R$/mês)</th>
+                            <th>Plano Clínica (R$/mês)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fisioterapia</td>
+                            <td>R$ 39,90</td>
+                            <td>R$ 119,90</td>
+                        </tr>
+                        <tr>
+                            <td>Nutrição</td>
+                            <td>R$ 34,90</td>
+                            <td>R$ 109,90</td>
+                        </tr>
+                        <tr>
+                            <td>Estética e Dermato</td>
+                            <td>R$ 44,90</td>
+                            <td>R$ 139,90</td>
+                        </tr>
+                        <tr>
+                            <td>Clínicas Multidisciplinares</td>
+                            <td>Não se aplica por definição operacional</td>
+                            <td>R$ 179,90</td>
+                        </tr>
+                        <tr>
+                            <td>Fonoaudiologia</td>
+                            <td>R$ 34,90</td>
+                            <td>R$ 109,90</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             
-            <div class="pricing-guarantee">
-                <div class="guarantee-content">
-                    <div class="guarantee-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="guarantee-text">
-                        <h4>Garantia de 30 dias</h4>
-                        <p>Se não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem perguntas, sem complicações.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="pricing-faq">
-                <h3>Perguntas Frequentes</h3>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h4>Posso cancelar a qualquer momento?</h4>
-                        <p>Sim! Você pode cancelar sua assinatura a qualquer momento sem taxas ou multas.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>Os dados ficam seguros?</h4>
-                        <p>Absolutamente! Utilizamos criptografia de nível bancário e backup automático diário.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>Preciso instalar algum software?</h4>
-                        <p>Não! O RegiFlex funciona 100% na nuvem. Acesse de qualquer lugar com internet.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>Tem suporte técnico?</h4>
-                        <p>Sim! Oferecemos suporte por email para todos os planos e suporte prioritário para clínicas.</p>
-                    </div>
-                </div>
+            <div class="pricing-footer">
+                <p>Para mais detalhes ou planos personalizados, entre em contato.</p>
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    Falar com Vendas
+                </a>
             </div>
         </div>
     </section>
